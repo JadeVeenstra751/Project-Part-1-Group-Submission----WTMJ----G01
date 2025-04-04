@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Job Application for LeafByte Tech">
+    <meta name="keywords" content="HTML, Job Application, LeafByte Tech, Green and brown">
+    <meta name="author" content="Will Stevens">
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <!--Meta children and link to css file-->
+</head>
+<body>
+    <img src="images/leafbyte tech logo.png" alt="Company Logo" width="50">
+    <!--inputs company logo at the top of the page, resizing it to 50px-->
+    <h1>Jop Application Page</h1>
+    <!--Acts as title of page-->
+    <p><strong><em>Please Note:</em></strong> All fields are required to validate your application. 
+     If they are not filled in, or filled in incorrectly, you won't be able to submit. 
+     If you are unable to answer you can use N/A. </p>
+     <!--Brief rule set of how the form will have to be submitted-->
+     <form>
+        <fieldset>
+            <legend>Job Reference Number</legend>
+            <select name="job_num" id="job_num" required="required">
+                <option value=" ">Please Select</option>
+                <option value="G01">G01- Software Developer</option>
+                <option value="G02">G02 - Network Administrator</option>
+                <option value="G03">G03 - Data Analyst</option>
+                <option value="G04">G04 - Cybersecurity Specialist</option>
+                <option value="G05">G05 - IT Support Technician</option>
+                <option value="G06">G06 - Cloud Engineer</option>
+                <option value="G07">G07 - AI/ML Engineer </option>
+            </select>
+        </fieldset>
+        <!--Adds a fieldset that has a drop down list, containing job reference numbers. 
+        Uses "please select" as a placeholder-->
+        <fieldset>
+            <legend>Name and Birth</legend>
+            <p>
+                <label for = "given name">Given Name</label>
+                <input type="text" name="name" id="name" pattern="[A-Za-z]" title="Can only be letter A through Z" size="20" maxlength = "20" required="required"/>
+                <label for = "family"> Family Name</label>
+                <input type="text" id="family" name="family" pattern="[A-Za-z]" title="Can only be letter A through Z" maxlength="20" size="20" required="required"/> </p>  
+            </p>
+            <!--Adds two text areas that makes sure only letters can be inputted for name-->
+            <p>
+                <label for = "DOB">Date of Birth</label>
+                <input type="date" name="DOB" id="DOB" size="10" required="required">
+            </p>
+            <!--Adds a date selector that is used to input date of birth-->
+            <p>
+                <label for="Male">Male</label>
+                <input type="radio" name="Gender" id="Male" required="required">
+                <label for="Female">Female</label>
+                <input type="radio" name="Gender" id="Female" required="required">
+                <label for="Non-Binary">Non-Binary</label>
+                <input type="radio" name="Gender" id="Non-Binary" required="required">
+                <label for="Prefer not to say">Prefer not to say</label>
+                <input type="radio" name="Gender" id="Prefer not to say" required="required">
+            </p>
+            <!--Adds a radio button set for Gender. Can only select one option-->
+        </fieldset>
+        <!--Creates a fieldset for name and date of birth-->
+        <fieldset>
+            <legend>Residential Address</legend>
+            <p>
+                <label for="streetAddress">Street Address</label>
+                <input type="textarea" size="20" maxlength="40" required="required">
+            </p>
+            <!--Adds a textarea for street address-->
+            <p>
+                <label for="suburb">Suburb/Town</label>
+                <input type="textarea" size="15" maxlength="40" required="required">
+            </p>
+            <!--Makes a textarea for suburb/town-->
+            <p>
+                <label for="state">State</label>
+                <select name="state" id="state" required="required">
+                    <option value=" ">Please Select</option>
+                    <option value="Vic">VIC</option>
+                    <option value="Nsw">NSW</option>
+                    <option value="Qld">QLD</option>
+                    <option value="Nt">NT</option>
+                    <option value="Wa">WA</option>
+                    <option value="Sa">SA</option>
+                    <option value="Tas">TAS</option>
+                    <option value="Act">ACT</option>
+                </select>
+            </p>
+            <!--creates a dropdown list for State, using please select as a placeholder-->
+            <p>
+                <label for="post">Postcode</label>
+                <input type="textarea" size="5" maxlength="4" pattern="[0-9]{4}" required="required">
+            </p>
+            <!--Creates a text area for postcode, checking that it only uses numbers and is 4 digits long-->
+        </fieldset>
+        <!--Makes a fieldset for Residential Address-->
+        <fieldset>
+            <legend>Contact Information</legend>
+            <p>
+                <label for="email">Email Address</label>
+                <input type="email" size="35" pattern="[A-Za-z]" required="required">
+            </p>
+            <!--Makes a text area for address that automatically validates and checks it only uses letters-->
+            <p>
+                <label for="Phone">Phone Number</label>
+                <input type="textarea" size="15" pattern="[0-9]{8-12}">
+            </p>
+            <!--Makes a textarea for phone number that checks that it only uses numbers, and is in between 8 and 12 digits.-->
+        </fieldset>
+     </form>
+     
+</body>
+</html>
