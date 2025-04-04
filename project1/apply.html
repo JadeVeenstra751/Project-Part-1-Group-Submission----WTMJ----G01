@@ -6,12 +6,12 @@
     <meta name="description" content="Job Application for LeafByte Tech">
     <meta name="keywords" content="HTML, Job Application, LeafByte Tech, Green and brown">
     <meta name="author" content="Will Stevens">
-    <title>Home Page</title>
+    <title>Job Application Page</title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <!--Meta children and link to css file-->
 </head>
 <body>
-    <img src="images/leafbyte tech logo.png" alt="Company Logo" width="50">
+    <img src="images/leafbytetechlogo.png" alt="CompanyLogo" width="50">
     <!--inputs company logo at the top of the page, resizing it to 50px-->
     <h1>Jop Application Page</h1>
     <!--Acts as title of page-->
@@ -22,8 +22,8 @@
      <form>
         <fieldset>
             <legend>Job Reference Number</legend>
-            <select name="job_num" id="job_num" required="required">
-                <option value=" ">Please Select</option>
+            <select name="jobnum" id="job_num" required="required">
+                <option value="">Please Select</option>
                 <option value="G01">G01- Software Developer</option>
                 <option value="G02">G02 - Network Administrator</option>
                 <option value="G03">G03 - Data Analyst</option>
@@ -38,26 +38,26 @@
         <fieldset>
             <legend>Name and Birth</legend>
             <p>
-                <label for = "given name">Given Name</label>
-                <input type="text" name="name" id="name" pattern="[A-Za-z]" title="Can only be letter A through Z" size="20" maxlength = "20" required="required"/>
+                <label for = "GivenName">Given Name</label>
+                <input type="text" name="name" id="GivenName" pattern="[A-Za-z]{1,20}" title="Can only be letter A through Z, can't be more than 20 characters" size="20" required>
                 <label for = "family"> Family Name</label>
-                <input type="text" id="family" name="family" pattern="[A-Za-z]" title="Can only be letter A through Z" maxlength="20" size="20" required="required"/> </p>  
+                <input type="text" id="family" name="family" pattern="[A-Za-z]{1,20}" title="Can only be letter A through Z, can't be more than 20 characters" maxlength="20" size="20" required> 
             </p>
             <!--Adds two text areas that makes sure only letters can be inputted for name-->
             <p>
                 <label for = "DOB">Date of Birth</label>
-                <input type="date" name="DOB" id="DOB" size="10" required="required">
+                <input type="date" name="DOB" id="DOB" size="10" required>
             </p>
             <!--Adds a date selector that is used to input date of birth-->
             <p>
                 <label for="Male">Male</label>
-                <input type="radio" name="Gender" id="Male" required="required">
+                <input type="radio" name="Gender" id="Male" required>
                 <label for="Female">Female</label>
-                <input type="radio" name="Gender" id="Female" required="required">
+                <input type="radio" name="Gender" id="Female" required>
                 <label for="Non-Binary">Non-Binary</label>
-                <input type="radio" name="Gender" id="Non-Binary" required="required">
-                <label for="Prefer not to say">Prefer not to say</label>
-                <input type="radio" name="Gender" id="Prefer not to say" required="required">
+                <input type="radio" name="Gender" id="Non-Binary" required>
+                <label for="PreferNotToSay">Prefer not to say</label>
+                <input type="radio" name="Gender" id="PreferNotToSay" required>
             </p>
             <!--Adds a radio button set for Gender. Can only select one option-->
         </fieldset>
@@ -65,19 +65,19 @@
         <fieldset>
             <legend>Residential Address</legend>
             <p>
-                <label for="streetAddress">Street Address</label>
-                <input type="textarea" size="20" maxlength="40" required="required">
+                <label for="StreetAddress">Street Address</label>
+                <input type="text" size="20" id="StreetAddress" maxlength="40" required>
             </p>
             <!--Adds a textarea for street address-->
             <p>
                 <label for="suburb">Suburb/Town</label>
-                <input type="textarea" size="15" maxlength="40" required="required">
+                <input type="text" size="15" id="suburb" maxlength="40" required>
             </p>
             <!--Makes a textarea for suburb/town-->
             <p>
                 <label for="state">State</label>
-                <select name="state" id="state" required="required">
-                    <option value=" ">Please Select</option>
+                <select name="state" id="state" required>
+                    <option value="">Please Select</option>
                     <option value="Vic">VIC</option>
                     <option value="Nsw">NSW</option>
                     <option value="Qld">QLD</option>
@@ -91,7 +91,7 @@
             <!--creates a dropdown list for State, using please select as a placeholder-->
             <p>
                 <label for="post">Postcode</label>
-                <input type="textarea" size="5" maxlength="4" pattern="[0-9]{4}" required="required">
+                <input type="text" size="5" id="post" maxlength="4" pattern="[0-9]{4}" required>
             </p>
             <!--Creates a text area for postcode, checking that it only uses numbers and is 4 digits long-->
         </fieldset>
@@ -100,15 +100,17 @@
             <legend>Contact Information</legend>
             <p>
                 <label for="email">Email Address</label>
-                <input type="email" size="35" pattern="[A-Za-z]" required="required">
+                <input type="email" size="35" id="email" required>
             </p>
             <!--Makes a text area for address that automatically validates and checks it only uses letters-->
             <p>
                 <label for="Phone">Phone Number</label>
-                <input type="textarea" size="15" pattern="[0-9]{8-12}">
+                <input type="text" size="15" id="Phone" pattern="[0-9]{8-12}" required>
             </p>
             <!--Makes a textarea for phone number that checks that it only uses numbers, and is in between 8 and 12 digits.-->
         </fieldset>
+        <input type= "submit" value="Apply">
+        <input type= "reset" value="Reset Form">
      </form>
      
 </body>
