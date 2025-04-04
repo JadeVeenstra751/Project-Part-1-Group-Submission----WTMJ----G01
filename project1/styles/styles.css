@@ -4,3 +4,9 @@
 .menu{
     display: inline-block;
 }
+
+.nav{
+    display: flex;
+    justify-content: space-evenly; /* Evenly distributes items */
+    align-items: center; /* Aligns items vertically */
+}
