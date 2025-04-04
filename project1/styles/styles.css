@@ -13,7 +13,7 @@
 }
 
 /* the background is set to a graphic image which is not repeated, covers the whole webpage and is centered*/
-body{ 
+.home{ 
     background-image: url('../images/khakibackground.png');
     background-position: center;
     background-repeat: no-repeat;
