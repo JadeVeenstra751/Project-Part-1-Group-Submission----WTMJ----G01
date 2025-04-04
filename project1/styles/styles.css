@@ -5,8 +5,17 @@
     display: inline-block;
 }
 
+/* the navigation/menu bar is aligned to the centre, spaced evenly and flex is added*/
 .nav{
     display: flex;
-    justify-content: space-evenly; /* Evenly distributes items */
-    align-items: center; /* Aligns items vertically */
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
+/* the background is set to a graphic image which is not repeated, covers the whole webpage and is centered*/
+body{ 
+    background-image: url('../images/khakibackground.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
