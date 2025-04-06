@@ -11,7 +11,7 @@
 /* the navigation/menu bar is aligned to the centre, spaced evenly and flex is added*/
 .nav{
     display: flex;
-    background-color:#4D2D18;
+    background-color:#2b180c;
     justify-content: space-evenly;
     align-items: center; 
 }
@@ -25,5 +25,44 @@
 }
 
 .CustomLink{
-    color:#4D2D18;
+    color:#2b180c;
+}
+
+/* WILL STEVENS*/
+
+/*Adds background colour*/
+.page{
+    background-color:#CABA9C;
+}
+
+.logo{
+    float:right;
+}
+
+.title, .note{
+    color:#2b180c;
+}
+/*Changes colour of fieldset text values*/
+fieldset{
+    color:#2b180c;
+    border-color:#2b180c;
+    border-radius:20px;
+    width:750px;
+}
+
+select, input{
+    color:#2b180c;
+    background-color:#8A6240;
+    border-radius:20px;
+    
+}
+
+select:hover{
+    color:#102820;
+    background-color:#4C6444; 
+}
+
+input:hover{
+    color:#102820;
+    background-color:#4C6444;   
 }
