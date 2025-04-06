@@ -3,11 +3,15 @@
 /* menu is displayed in one line*/
 .menu{
     display: inline-block;
+    padding:8px;
+    border-radius:20px;
+    background-color:#8A6240;
 }
 
 /* the navigation/menu bar is aligned to the centre, spaced evenly and flex is added*/
 .nav{
     display: flex;
+    background-color:#4D2D18;
     justify-content: space-evenly;
     align-items: center; 
 }
@@ -18,4 +22,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.CustomLink{
+    color:#4D2D18;
 }
