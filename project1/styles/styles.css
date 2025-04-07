@@ -24,6 +24,7 @@ nav a:hover {
 /* the navigation/menu bar*/
 .nav{
     display: flex; 
+    font-weight: bold; /*makes the text bold*/
     background-color: #8A6240; /*brown backgorund colour for the nav bar*/
     justify-content: space-evenly; /*spaces the items evenly*/
     font-size: 20px; /*font size is 17px*/
@@ -43,7 +44,7 @@ nav a:hover {
 }
 
 /*hyperlinks*/
-.CustomLink{
+.CustomLink, footer{
     color:#4d2d18; /*hyperlinks are set to brown*/
 }
 
