@@ -8,10 +8,10 @@
 /*nav <a>*/
 nav a{
     text-decoration: none; /*no underline for hyperlinks*/
-    background-color: #ab8462; /*the background for nav a is brown*/
+    background-color: #ab8462; /*the background for nav a is light brown*/
     padding: 12px 35px; /*adds padding, space around text*/
     border-radius: 20px; /*makes the button round*/
-    margin:0px;
+    margin:0px; /*removes the existing margin*/
 }
 
 /*nav <a> hover*/
@@ -35,6 +35,11 @@ nav a:hover {
     margin: auto; /*centres the nav bar*/
 }
 
+/*logo image*/
+#imagelogo{
+    float:left; /*image is floated to the left*/
+    margin: auto;
+}
 /*background*/
 .home{ 
     background-image: url('../images/khakibackground.png'); /*image is from https://www.freepik.com/photos/khaki-background*/
@@ -50,11 +55,43 @@ nav a:hover {
 
 /*footer for the index page*/
 .indexfooter {
-    background-color: #8A6240; /* same brown as nav */
-    text-align: center; /* center the text */
-    margin-top: 10px; /* spacing from content above */
+    background-color: #8A6240; /*turns background brown*/
+    text-align: center; /*centres the text*/
+    margin-top: 10px; /*spacing from content above*/
     clear: both; /*pushing the footer to the bottom*/
     padding: 10px 0; /*adds padding to the footer*/
+}
+
+/*company information*/
+#indexcompanyinfo{
+    background-color: #ab8462; /*the background company information is light brown*/
+    padding: 12px 35px; /*adds padding, space around text*/
+    border-radius: 20px; /*makes the button round*/
+    margin:0px; /*removes the existing margin*/
+    margin: auto;
+    float: right;
+}
+
+/*buttons in the company information*/
+#indexinfobuttons {
+    width: 5%; /* width of the nav bar is 85%*/
+    background-color: #8A6240; /*brown backgorund colour for the nav bar*/
+    padding: 12px 35px; /*adds padding*/
+    border-radius: 25px; /*border is rounded*/
+    margin: auto; /*centres search button*/
+    text-align: center; /*centres the text*/
+}
+
+/*section*/
+section a{
+    text-decoration: none; /*no underline for hyperlinks*/
+}
+
+/*indexinfobuttons hover*/
+#indexinfobuttons:hover {
+    background-color: #69944c;/*changes background to light green*/
+    border: 2px solid #2d441e;/*changes border to dark green*/
+    padding: 10px 35px; /*adds padding to the hover*/
 }
 
 /* WILL STEVENS*/
