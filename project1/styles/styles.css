@@ -3,29 +3,63 @@
 /* menu is displayed in one line*/
 .menu{
     display: inline-block;
-    padding:8px;
-    border-radius:20px;
-    background-color:#8A6240;
 }
 
-/* the navigation/menu bar is aligned to the centre, spaced evenly and flex is added*/
+/*nav <a>*/
+nav a{
+    text-decoration: none; /*no underline for hyperlinks*/
+    background-color: #ab8462; /*the background for nav a is*/
+    padding: 12px 35px; /*adds padding, space around text*/
+    border-radius: 20px; /*makes the button round*/
+    margin:0px;
+}
+
+/*nav <a> hover*/
+nav a:hover {
+    background-color: #69944c;/*changes background to light green*/
+    border: 2px solid #2d441e;/*changes border to dark green*/
+    padding: 12px 35px; /*adds padding to the hover*/
+}
+
+/* the navigation/menu bar*/
 .nav{
-    display: flex;
-    background-color:#2b180c;
-    justify-content: space-evenly;
-    align-items: center; 
+    display: flex; 
+    background-color: #8A6240; /*brown backgorund colour for the nav bar*/
+    justify-content: space-evenly; /*spaces the items evenly*/
+    font-size: 20px; /*font size is 17px*/
+    align-items: center; /*vertically aligns items to centre*/
+    width: 85%; /* width of the nav bar is 90%*/
+    padding: 6px 0; /*adds padding*/
+    border-radius: 25px; /*border is rounded*/
+    margin: auto; /*centres the nav bar*/
 }
 
-/* the background is set to a graphic image which is not repeated, covers the whole webpage and is centered*/
+/*background*/
 .home{ 
-    background-image: url('../images/khakibackground.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url('../images/khakibackground.png'); /*image is from https://www.freepik.com/photos/khaki-background*/
+    background-position: center; /*centred in the middle of the screen*/
+    background-repeat: no-repeat; /*image is not repeated to prevent tiles*/
+    background-size: cover; /*covers the whole page*/
 }
 
+/*hyperlinks*/
 .CustomLink{
-    color:#2b180c;
+    color:#4d2d18; /*hyperlinks are set to brown*/
+}
+
+/*footer for the index page*/
+.indexfooter {
+    background-color: #8A6240; /* same brown as nav */
+    text-align: center; /* center the text */
+    margin-top: 10px; /* spacing from content above */
+    clear: both; /*pushing the footer to the bottom*/
+    padding: 10px 0; /*adds padding to the footer*/
+}
+
+/*footer <a>*/
+footer a{
+    text-decoration: none; /*no underline for hyperlinks*/
+    color:#4d2d18; /*colour is set to brown*/
 }
 
 /* WILL STEVENS*/
