@@ -8,7 +8,7 @@
 /*nav <a>*/
 nav a{
     text-decoration: none; /*no underline for hyperlinks*/
-    background-color: #ab8462; /*the background for nav a is*/
+    background-color: #ab8462; /*the background for nav a is brown*/
     padding: 12px 35px; /*adds padding, space around text*/
     border-radius: 20px; /*makes the button round*/
     margin:0px;
@@ -27,9 +27,9 @@ nav a:hover {
     font-weight: bold; /*makes the text bold*/
     background-color: #8A6240; /*brown backgorund colour for the nav bar*/
     justify-content: space-evenly; /*spaces the items evenly*/
-    font-size: 20px; /*font size is 17px*/
+    font-size: 20px; /*font size is 20px*/
     align-items: center; /*vertically aligns items to centre*/
-    width: 85%; /* width of the nav bar is 90%*/
+    width: 85%; /* width of the nav bar is 85%*/
     padding: 6px 0; /*adds padding*/
     border-radius: 25px; /*border is rounded*/
     margin: auto; /*centres the nav bar*/
@@ -43,9 +43,9 @@ nav a:hover {
     background-size: cover; /*covers the whole page*/
 }
 
-/*hyperlinks*/
-.CustomLink, footer{
-    color:#4d2d18; /*hyperlinks are set to brown*/
+/*hyperlinks and footer colours*/
+.CustomLink, footer, footer a{
+    color:#4d2d18; /*text is set to brown*/
 }
 
 /*footer for the index page*/
@@ -55,12 +55,6 @@ nav a:hover {
     margin-top: 10px; /* spacing from content above */
     clear: both; /*pushing the footer to the bottom*/
     padding: 10px 0; /*adds padding to the footer*/
-}
-
-/*footer <a>*/
-footer a{
-    text-decoration: none; /*no underline for hyperlinks*/
-    color:#4d2d18; /*colour is set to brown*/
 }
 
 /* WILL STEVENS*/
