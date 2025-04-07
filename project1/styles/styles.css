@@ -101,3 +101,21 @@ input:hover{
     color:#102820;
     background-color:#4C6444;   
 }
+
+/*Moji Alak*/
+
+/*adds back ground colour for about page*/
+.about{
+    background-color: #CABA9C
+}
+
+/*formatting for comapany logo on about page*/
+.complogo{
+    float:left
+}
+
+/*formatting for about page Footer*/
+.aboutfooter{
+    text-align: center
+}
+

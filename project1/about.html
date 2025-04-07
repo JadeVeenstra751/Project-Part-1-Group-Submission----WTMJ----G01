@@ -14,77 +14,96 @@
     <!--link to the css page-->
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
-<nav class="nav">
-    <p class="menu"><a href="/project1/index.html" class="CustomLink">HOME</a></p> 
-    <p class="menu"><a href="/project1/jobs.html" class="CustomLink">JOBS</a> </p> 
-    <p class="menu"><a href="/project1/apply.html" class="CustomLink">APPLY</a></p> 
-    <p class="menu"><a href="/project1/about.html" class="CustomLink">ABOUT</a></p> 
-    <p class="menu"><a href="mailto:info@LeafByteTech.com.au" class="CustomLink">CONTACT</a></p> 
-</nav>
-<hr>
-<aside>
 
-    <main>
-        <h1>About Us</h1>
-        <p>Here at LeafByte Tech, we are a team of dedicated sofware developers who believe in harnessing the power of Techonology and its potential to improve the world we live in. Leafbyte Tech is all about innovation, imagination, creativity and ingenuity. </p>
+<body class="about">
+    <img src="images/leafbytetechlogo.png" class="complogo" alt="LeafByte Tech Logo" width="100">
+    <nav class="nav">
+        <p class="menu"><a href="/project1/index.html" class="CustomLink">HOME</a></p> 
+        <p class="menu"><a href="/project1/jobs.html" class="CustomLink">JOBS</a> </p> 
+        <p class="menu"><a href="/project1/apply.html" class="CustomLink">APPLY</a></p> 
+        <p class="menu"><a href="/project1/about.html" class="CustomLink">ABOUT</a></p> 
+        <p class="menu"><a href="mailto:info@LeafByteTech.com.au" class="CustomLink">CONTACT</a></p> 
+    </nav>
+    <br>
 
+    <h1>About Us</h1>
+    <p>Here at LeafByte Tech, we are a team of dedicated sofware developers who believe in harnessing the power of Techonology and its potential to improve the world we live in. Leafbyte Tech is all about embracing innovation, imagination, creativity and ingenuity. </p>
+
+    <!--Side bar-->
+    <aside>
+        <!--Unordered list of student's name with nested list for class time and student ID-->
+        <p><strong>Class Information</strong></p>
+        <ul>
+            <li>Jade Veenstra
+                <ul>
+                    <li>Student ID: 105929618</li>
+                    <li>Class Time: 10.30</li>
+                </ul>
+            </li>
+            <li>Will Stevens
+                <ul>
+                    <li>Student ID: 105933787</li>
+                    <li>Class Time: 10.30</li>
+                </ul>
+            </li>
+            <li>Muhammad Taki
+                <ul>
+                    <li>Student ID: 105653797</li>
+                    <li>Class Time: 10.30</li>
+                </ul>
+            </li>
+            <li>Moji Alak
+                <ul>
+                    <li>Student ID: 105616282</li>
+                    <li>Class Time: 10.30</li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
+
+    <!--Section for table with team members and interests-->
+    <section>
         <h2>Meet the Team</h2>
         <img src="images/placeholderpic.png" alt="Team Photo" width="100">
+        <table>
+            <tr>
+                <th>Jade Veenstra</th>
+                <th>Will Stevens</th>
+                <th>Muhammad Taki</th>
+                <th>Moji Alak</th>
+            </tr>
+            <tr>
+                <td>Insert Jade Veenstra Interests, Creator of the <a href="index.html">Home</a> Page</td>
+                <td>Insert Will Stevens Interests, Creator of the <a href="apply.html">Apply</a> Page</td>
+                <td>Insert Muhammad Taki Interests, Creator of the <a href="jobs.html">Position Description</a> Page</td>
+                <td>Insert Moji Alak Interests, Creator of the <a href="about.html">About</a> Page</td>
+            </tr>
+        </table>
+    </section>
+
+    <!--Main section wiht Definition List for member name and their contribution-->
+    <main>
+        <h3>Contributions</h3>
         <dl>
             <dt>Jade Veenstra</dt>
-            <dd>
-                <p>Creator of the <a href="index.html">Home</a> Page</p>
-                <p>A Little Bit about Jade</p>
-                    <ul>
-                        <li>interests</li>
-                        <li>interests</li>
-                        <li>interests</li>
-                    </ul>
-            </dd>
+            <dd>Creator of the <a href="index.html">Home</a> Page</dd>
 
             <dt>Will Stevens</dt>
-            <dd>
-                <p>Creator of the <a href="apply.html">Apply</a> Page</p>
-                <p>A Little Bit about Will</p>
-                    <ul>
-                        <li>interests</li>
-                        <li>interests</li>
-                        <li>interests</li>
-                    </ul>
-            </dd>
+            <dd>Creator of the <a href="apply.html">Apply</a> Page</dd>
 
             <dt>Muhammad Taki</dt>
-            <dd>
-                <p>Creator of the <a href="jobs.html">Position Description</a> Page</p>
-                <p>A Little Bit about Taki</p>
-                    <ul>
-                        <li>interests</li>
-                        <li>interests</li>
-                        <li>interests</li>
-                    </ul>
-            </dd>
+            <dd>Creator of the <a href="jobs.html">Position Description</a> Page
 
             <dt>Moji Alak</dt>
-            <dd>
-                <p>Creator of the <a href="about.html">About</a> Page</p>
-                <p>A Little Bit about Moji</p>
-                    <ul>
-                        <li>interests</li>
-                        <li>interests</li>
-                        <li>interests</li>
-                    </ul>
-            </dd>
-
+            <dd>Creator of the <a href="about.html">About</a> Page</dd>
         </dl>
-
-
         <p> If you are ready to make your mark within the tech world, <a href="apply.html">join us today</a> in our journey to transform the industry, one byte at a time.</p>
     </main>
     <hr>
 
-    <footer>
-        <p>&copy; 2025 LeafByte Tech. All rights reserved. &bull; <a href="https://wtmjg01.atlassian.net/jira/your-work">Jira Project</a></p>
+    <!--Footer Section with link to JIRA project-->
+    <footer class="aboutfooter">
+        <p><a href="https://wtmjg01.atlassian.net/jira/your-work" target="_blank">&copy; 2025 LeafByte Tech. All rights reserved. &bull; Jira Project</a></p>
     </footer>
-
 </body>
 </html>
