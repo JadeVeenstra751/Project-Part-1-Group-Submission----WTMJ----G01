@@ -96,41 +96,49 @@ section a{
 
 /* WILL STEVENS*/
 
-/*Adds background colour*/
+/*The whole page*/
 .page{
-    background-color:#CABA9C;
+    background-color:#CABA9C;/*changes background colour to a kahki*/
 }
 
-.logo{
-    float:right;
-}
-
+/*Title and aside note at the top*/
 .title, .note{
-    color:#2b180c;
-}
-/*Changes colour of fieldset text values*/
-fieldset{
-    color:#2b180c;
-    border-color:#2b180c;
-    border-radius:20px;
-    width:750px;
+    color:#4d2d18;/*changes colour to brown*/
 }
 
+/*Aside note*/
+.AsideNote{
+    float:right;/*Sets the note fieldset to the right*/
+    width:400px;/*decreases the width from 750px to 400px, only for this fieldset*/
+}
+/*Fieldset*/
+fieldset{
+    color:#4d2d18;/*changes color of the text to brown*/
+    border-color:#4d2d18;/*changes colour of its border to brown*/
+    border-radius:20px;/*changes border radius to round it off more*/
+    width:750px;/*changes width of fieldset to 750px*/
+}
+
+/*select and input*/
 select, input{
-    color:#2b180c;
-    background-color:#8A6240;
-    border-radius:20px;
+    color:#4d2d18;/*changes colour of text to brown*/
+    background-color:#8A6240;/*changes background colour to light brown*/
+    border-radius:20px;/*changes border radius so that the border has rounded corners*/
+    padding:6px;/*creates a bigger gap between the border and the text*/
+    font-size:14px;/*changes font size to 14px*/
     
 }
 
+/*When hovered over select*/
 select:hover{
-    color:#102820;
-    background-color:#4C6444; 
+    background-color: #69944c;/*changes background to light green*/
+    border: 2px solid #2d441e;/*changes border to dark green*/ 
 }
 
+/*When hovered over input*/
 input:hover{
-    color:#102820;
-    background-color:#4C6444;   
+    background-color: #69944c;/*changes background to light green*/
+    border: 2px solid #2d441e;/*changes border to dark green*/  
 }
 
 /*Moji Alak*/
