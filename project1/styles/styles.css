@@ -48,12 +48,16 @@ nav a:hover {
     background-repeat: no-repeat; /*image is not repeated to prevent tiles*/
     background-size: cover; /*covers the whole page*/
 }
+
+/*body*/
 body{
-    font-family:Calibri;
+    font-family:Calibri; /*making the website font calibri*/
 }
+
 /*hyperlinks and footer colours*/
 .CustomLink, footer, footer a{
     color:#351e0f; /*text is set to brown*/
+    text-decoration: none; /*removes the underline from the hyperlink*/
 }
 
 /*footer for the index page*/
@@ -98,6 +102,7 @@ section a{
     padding: 10px 20px; /*adds padding to the hover*/
 }
 
+/*hover for section and footer*/
 section a:hover, footer a:hover{
     color: #2d441e;/*changes text to dark green*/
 }
