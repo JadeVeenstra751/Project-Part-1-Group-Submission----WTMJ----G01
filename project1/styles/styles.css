@@ -48,7 +48,9 @@ nav a:hover {
     background-repeat: no-repeat; /*image is not repeated to prevent tiles*/
     background-size: cover; /*covers the whole page*/
 }
-
+body{
+    font-family:Calibri;
+}
 /*hyperlinks and footer colours*/
 .CustomLink, footer, footer a{
     color:#351e0f; /*text is set to brown*/
@@ -231,7 +233,7 @@ input:hover{
 }
 
 /*formatting for about page Footer*/
-.aboutfooter{
+footer{
     position: fixed; /*ensures footer is fixed*/
     bottom: 0; /*ensure that footer is fixed to the BOTTOM of the page*/
     left: 0; /*ensures that there is 0px gap from the left of page*/
