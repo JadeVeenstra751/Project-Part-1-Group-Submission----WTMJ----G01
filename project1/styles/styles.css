@@ -186,7 +186,7 @@ input:hover{
 /*styling for ul on about page*/
 .aboutlist{
     list-style-type: none; /*removes the bullet points from lists*/
-    margin-bottom: 10px; /*spacing between items for readability*/
+    margin-bottom: 5px; /*spacing between items for readability*/
 }
 
 /*team photo styling*/
@@ -226,10 +226,35 @@ input:hover{
     transition: background-color 0.5s ease; /*delays the colour transition for a smoother effect*/
 }
 
+#contributions {
+    margin: auto;
+    border:2px solid #2d441e;
+    border-radius: 15px;
+    padding: 1em;
+}
+
+#studentstitle {
+    text-align: left;
+}
+
+.students{
+    float: left;
+}
+
+#teacherstitle {
+    text-align: right;
+}
+
+.teachers {
+    float: right;
+}
+
 /*Closing line styling*/
 #finalabout{
     text-align: center; /*makes text aling to center*/
     color: #2d441e; /*changes text colour to green*/
+    clear: both;
+    padding: 2em;
 }
 
 /*formatting for about page Footer*/
