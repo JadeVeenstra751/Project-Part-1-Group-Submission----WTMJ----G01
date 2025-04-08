@@ -8,35 +8,77 @@
     <link rel="stylesheet" href="styles/styles.css">
     <title>Job description</title>
 </head>
-<body>
+<body class="page">
+    <!--Applied <nav> to create a navigation section for site links-->
 	<nav class="nav">
+        <!--Applied <p> to group individual navigation links -->
+        <!--Applied <a> to create clickable links to other pages and email-->
         <p class="menu"><a href="/project1/index.html" class="CustomLink">HOME</a></p> 
 		<p class="menu"><a href="/project1/jobs.html" class="CustomLink">JOBS</a> </p> 
 		<p class="menu"><a href="/project1/apply.html" class="CustomLink">APPLY</a></p> 
 		<p class="menu"><a href="/project1/about.html" class="CustomLink">ABOUT</a></p> 
 		<p class="menu"><a href="mailto:info@LeafByteTech.com.au" class="CustomLink">CONTACT</a></p> 
 	</nav>
-    <h1>Job description Page</h1>
+    <!--Applied <img> to display the company logo-->
+    <img id="logo_jobs" src="images/leafbytetechlogo.png" alt="CompanyLogo"> 
+    <h1>Jobs at Leaf Byte Tech</h1>
+        <!--Applied <aside> to show additional information like employee benefits-->
+    <aside id="aside_jobs">
+        <h3>Benefits of working at </h3>
+        <ul>
+            <!--Use of GenAI !!!-->
+            <li><b>Flexible Work Hours</b> – We believe in results, not rigid schedules.</li>
+            <li><b>Remote & Hybrid Options</b> – Work from anywhere</li>
+            <li><b>Learning & Development</b> – Access to online courses, and certifications</li>
+            <li><b>Tech Perks</b> – Get high tech laptop and access to paid softwares fore free </li>
+        </ul>
+    </aside>
+     <!--Applied <section> to organise related job listing content-->
     <section>
         <fieldset>
-            <legend><h2>Software Developer</h2></legend>
-            <h3>Reference Number:</h3>
-            <p>[5 alphanumeric characters]</p>
+             <!--Applied <legend> to give the fieldset a title-->
+            <legend class="h1_jobs"><h2>Software Developer</h2></legend>
+            <p><b>Reference Number:</b> SF71T</p>
             <p><b>Description:</b></p>
-            <p>Brief description of the position</p>
-            <p><b>Salary Range:</b> Salary range</p>
+            <!--Use of GenAI !!!-->
+            <p>
+                Join the innovative team at Leaf Byte Tech as a Software Developer! In this role, you’ll design, build, and maintain cutting-edge software solutions that drive our tech-forward vision. You'll collaborate with cross-functional teams to develop scalable applications, debug complex issues, and continuously improve user experiences. If you’re passionate about clean code, agile development, and making a real impact through technology, we’d love to hear from you!
+            </p>
+            <p><b>Responsibilites of this position include:</b></p>
+            <ol>
+                <!--Use of GenAI !!!-->
+                <li> Design, develop, and maintain web and mobile applications.</li>
+                <li>Write clean, scalable, and well-documented code.</li>
+                <li>Participate in code reviews and agile sprint planning.</li>
+                <li>Identify, troubleshoot, and fix bugs or performance issues.</li>
+            </ol>
+            <p><b>Salary Range:</b> $100k - $135k</p>
         </fieldset>
     </section>
     <br>
     <section>
         <fieldset>
-            <legend><h2>AI/ML Engineer</h2></legend>
-            <h3>Reference Number:</h3>
-            <p>[5 alphanumeric characters]</p>
+            <legend class="h1_jobs"><h2>AI/ML Engineer</h2></legend>
+            <p><b>Reference Number:</b> AI02M</p>
             <p><b>Description:</b></p>
-            <p>Brief description of the position</p>
-            <p><b>Salary Range:</b> Salary range</p>
+            <!--Use of GenAI !!!-->
+            <p>Leaf Byte Tech is seeking a driven ML/AI Engineer to develop intelligent solutions that power our next-generation products. You'll design and deploy machine learning models, fine-tune algorithms, and work with large datasets to extract meaningful insights. This role is perfect for someone passionate about AI innovation, from prototyping to production, and excited to shape the future of smart technology.</p>
+            <p> <b>Responsibilites of this position include:</b></p>
+            <ol>
+                <!--Use of GenAI !!!-->
+                <li>Build, train, and deploy machine learning models for real-world applications</li>
+                <li>Research and implement state-of-the-art ML/AI techniques.</li>
+                <li>Collaborate with software engineers and data scientists to integrate models into production.</li>
+                <li>Maintain and monitor deployed models to ensure long-term efficiency and relevance.</li>
+            </ol>
+            <p><b>Salary Range:</b> $125k - $150k</p>
         </fieldset>
+        <br>
+         <!--Applied <footer> to include closing site content such as credits and links-->
+        <footer id="footer_jobs">
+            <a href="https://wtmjg01.atlassian.net/jira/software/projects/SCRUM/boards/1/timeline" >Jira roject Management</a>
+            <em>| &copy; 2025 LeafByte Tech. All rights reserved.</em>
+        </footer>
     </section>
 </body>
 </html>

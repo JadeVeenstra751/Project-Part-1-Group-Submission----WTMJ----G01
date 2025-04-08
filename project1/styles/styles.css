@@ -8,10 +8,10 @@
 /*nav <a>*/
 nav a{
     text-decoration: none; /*no underline for hyperlinks*/
-    background-color: #ab8462; /*the background for nav a is brown*/
+    background-color: #ab8462; /*the background for nav a is light brown*/
     padding: 12px 35px; /*adds padding, space around text*/
     border-radius: 20px; /*makes the button round*/
-    margin:0px;
+    margin:0px; /*removes the existing margin*/
 }
 
 /*nav <a> hover*/
@@ -19,6 +19,7 @@ nav a:hover {
     background-color: #69944c;/*changes background to light green*/
     border: 2px solid #2d441e;/*changes border to dark green*/
     padding: 12px 35px; /*adds padding to the hover*/
+    color: #2d441e;
 }
 
 /* the navigation/menu bar*/
@@ -35,6 +36,11 @@ nav a:hover {
     margin: auto; /*centres the nav bar*/
 }
 
+/*logo image*/
+#imagelogo{
+    float:left; /*image is floated to the left*/
+    margin: auto;
+}
 /*background*/
 .home{ 
     background-image: url('../images/khakibackground.png'); /*image is from https://www.freepik.com/photos/khaki-background*/
@@ -45,55 +51,100 @@ nav a:hover {
 
 /*hyperlinks and footer colours*/
 .CustomLink, footer, footer a{
-    color:#4d2d18; /*text is set to brown*/
+    color:#351e0f; /*text is set to brown*/
 }
 
 /*footer for the index page*/
 .indexfooter {
-    background-color: #8A6240; /* same brown as nav */
-    text-align: center; /* center the text */
-    margin-top: 10px; /* spacing from content above */
+    background-color: #8A6240; /*turns background brown*/
+    text-align: center; /*centres the text*/
+    margin-top: 10px; /*spacing from content above*/
     clear: both; /*pushing the footer to the bottom*/
     padding: 10px 0; /*adds padding to the footer*/
 }
 
+/*company information*/
+#indexcompanyinfo{
+    background-color: #ab8462; /*the background company information is light brown*/
+    padding: 12px 35px; /*adds padding, space around text*/
+    border-radius: 20px; /*makes the button round*/
+    margin:0px; /*removes the existing margin*/
+    margin: auto;
+    float: right;
+}
+
+/*buttons in the company information*/
+#indexinfobuttons {
+    width: 5%; /* width of the nav bar is 85%*/
+    background-color: #8A6240; /*brown backgorund colour for the nav bar*/
+    padding: 12px 20px; /*adds padding*/
+    border-radius: 25px; /*border is rounded*/
+    margin: auto; /*centres search button*/
+    text-align: center; /*centres the text*/
+}
+
+/*section*/
+section a{
+    text-decoration: none; /*no underline for hyperlinks*/
+    color:#351e0f;
+}
+
+/*indexinfobuttons hover*/
+#indexinfobuttons:hover {
+    background-color: #69944c;/*changes background to light green*/
+    border: 2px solid #2d441e;/*changes border to dark green*/
+    padding: 10px 20px; /*adds padding to the hover*/
+}
+
+section a:hover, footer a:hover{
+    color: #2d441e;/*changes text to dark green*/
+}
+
 /* WILL STEVENS*/
 
-/*Adds background colour*/
+/*The whole page*/
 .page{
-    background-color:#CABA9C;
+    background-color:#CABA9C;/*changes background colour to a kahki*/
 }
 
-.logo{
-    float:right;
-}
-
+/*Title and aside note at the top*/
 .title, .note{
-    color:#2b180c;
-}
-/*Changes colour of fieldset text values*/
-fieldset{
-    color:#2b180c;
-    border-color:#2b180c;
-    border-radius:20px;
-    width:750px;
+    color:#4d2d18;/*changes colour to brown*/
 }
 
+/*Aside note*/
+.AsideNote{
+    float:right;/*Sets the note fieldset to the right*/
+    width:400px;/*decreases the width from 750px to 400px, only for this fieldset*/
+}
+/*Fieldset*/
+fieldset{
+    color:#4d2d18;/*changes color of the text to brown*/
+    border-color:#4d2d18;/*changes colour of its border to brown*/
+    border-radius:20px;/*changes border radius to round it off more*/
+    width:750px;/*changes width of fieldset to 750px*/
+}
+
+/*select and input*/
 select, input{
-    color:#2b180c;
-    background-color:#8A6240;
-    border-radius:20px;
+    color:#4d2d18;/*changes colour of text to brown*/
+    background-color:#8A6240;/*changes background colour to light brown*/
+    border-radius:20px;/*changes border radius so that the border has rounded corners*/
+    padding:6px;/*creates a bigger gap between the border and the text*/
+    font-size:14px;/*changes font size to 14px*/
     
 }
 
+/*When hovered over select*/
 select:hover{
-    color:#102820;
-    background-color:#4C6444; 
+    background-color: #69944c;/*changes background to light green*/
+    border: 2px solid #2d441e;/*changes border to dark green*/ 
 }
 
+/*When hovered over input*/
 input:hover{
-    color:#102820;
-    background-color:#4C6444;   
+    background-color: #69944c;/*changes background to light green*/
+    border: 2px solid #2d441e;/*changes border to dark green*/  
 }
 
 /*Moji Alak*/
@@ -168,4 +219,46 @@ table{
 #abouttable tr:nth-child(even) {
     background-color: #6E8266;
 
+    text-align: center
+}
+
+/* Muhammad Taki*/
+
+
+/* To set a fixed width for the logo image */
+#logo_jobs{
+    width: 200px;
+}
+/* footer setting*/
+#footer_jobs{
+    padding: 5px;
+    border: solid #4d2d18;
+    text-align: center;
+    background-color: #8A6240;
+    width: 100%;
+}
+
+/* Job Title setting*/
+
+.h1_jobs{
+    border: solid #4d2d18;
+    width: 230px;
+    border-radius: 10px;
+    transition-duration: 0.1s;
+}
+
+.h1_jobs:hover{
+    background-color: #4d2d18;
+    color: #CABA9C;
+}
+
+/* aside setting*/
+
+#aside_jobs{
+    float: right;
+    border: solid  #4d2d18;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 5px;
+    width: 25%;
 }
