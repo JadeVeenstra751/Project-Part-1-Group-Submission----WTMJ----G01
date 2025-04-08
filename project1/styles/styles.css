@@ -149,77 +149,96 @@ input:hover{
 
 /*Moji Alak*/
 
-/*adds back ground colour for about page*/
+/*formatting for body*/
 .about{
-    background-color: #CABA9C;
+    background-color: #CABA9C;/*adds back ground colour*/
+    padding-bottom: 50px; /*ensures that sections will not overlap with fixed footer*/
+}
+
+#aboutheader{
+    border: 2px solid #8A6240; /*creates a border for the section*/
+    border-radius: 15px; /*makes the border rounded*/
+    padding: 10px; 
+    background-color: #ab8462; /*Adds background colour within the bordered section*/
+    overflow: hidden; /*Make sure the image and text stays within the border*/
 }
 
 /*formatting for comapany logo on about page*/
 .complogo{
-    float: left;
-    padding: 5px;
+    float: left; /*ensure image is on the left*/
+    padding: 5px; /*adds padding to image*/
 }
 
 /*Hyperlinks formatting for about page*/
 .aboutlink{
-    text-decoration: none;
-    color: #4d2d18
-}
-
-/*formatting for about page Footer*/
-.aboutfooter{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    background-color: #8A6240;
-    padding: 10px;
+    text-decoration: none; /*removes underline from hyperlinks*/
+    color: #4d2d18 /*changes colour of hyperlink to brown*/
 }
 
 /*formatting for side bar*/
 .sidebar{
-    text-align: right;
-    float: right;
+    text-align: right; /*ensure section is on the right*/
+    float: right; /*allow other items to be on the left of section*/
 }
 
+/*styling for ul on about page*/
 .aboutlist{
-    list-style-type: none;
+    list-style-type: none; /*removes the bullet points from lists*/
+    margin-bottom: 10px; /*spacing between items for readability*/
 }
 
+/*team photo styling*/
 #teampic{
-    float: right;
-    margin-left: 10px;
-    margin-top: 10px;
-    border: 2px solid #8A6240;
-
-}
-
-#aboutheader{
-    border: 2px solid #4C6444;
+    float: right; /*image to be positioned on the right while allowing other contents to flow to the left*/
+    margin-left: 10px; /*adds margin to the left of image*/
+    margin-top: 10px; /*adds margin to the top of image*/
+    border: 2px solid #8A6240; /*adds boarder to image*/
     border-radius: 15px; /*makes the border rounded*/
-    padding: 10px; 
-    background-color: #4C6444; /*Adds background colour within the bordered section*/
-    overflow: hidden; /*Make sure the image and text stays within the border*/
 }
 
+/*styling for unordered list in table*/
+.tablelist{
+    list-style-type: none; /*removes bullet points from list*/
+    text-align: left; /*aligns text to the left of table*/
+}
+
+/*table formatting*/
 #abouttable{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 75%;
-}
-
-table{
+    text-align: center; /*align text within the table to center*/
+    margin: 0 auto; /*ensures that table is centered on the page*/
+    width: 75%; /*ensures that table takes up 75% of page*/
     border-collapse: collapse;
-    padding: 10px;
+    padding: 10px; /*adds padding to table*/
+    background-color: #8A6240;
+    border-radius: 15px;
 }
 
-#abouttable tr:nth-child(even) {
-    background-color: #6E8266;
+/*adds hover effect to table*/
+#abouttable tr:hover{
+    background-color: #69944c;
+    cursor: pointer;
+}
 
-    text-align: center
+/*transition effect or table*/
+#abouttable tr{
+    transition: background-color 0.5s ease; /*delays the colour transition for a smoother effect*/
+}
+
+/*Closing line styling*/
+#finalabout{
+    text-align: center; /*makes text aling to center*/
+    color: #2d441e; /*changes text colour to green*/
+}
+
+/*formatting for about page Footer*/
+.aboutfooter{
+    position: fixed; /*ensures footer is fixed*/
+    bottom: 0; /*ensure that footer is fixed to the BOTTOM of the page*/
+    left: 0; /*ensures that there is 0px gap from the left of page*/
+    width: 100%; /*ensures that footer spans across the whole width of page*/
+    text-align: center; /*align text content to center*/
+    background-color: #8A6240; /*adds background colour to section*/
+    border-top: solid #4d2d18; /*adds border only to the top of section*/
 }
 
 /* Muhammad Taki*/
