@@ -100,15 +100,72 @@ input:hover{
 
 /*adds back ground colour for about page*/
 .about{
-    background-color: #CABA9C
+    background-color: #CABA9C;
 }
 
 /*formatting for comapany logo on about page*/
 .complogo{
-    float:left
+    float: left;
+    padding: 5px;
+}
+
+/*Hyperlinks formatting for about page*/
+.aboutlink{
+    text-decoration: none;
+    color: #4d2d18
 }
 
 /*formatting for about page Footer*/
 .aboutfooter{
-    text-align: center
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #8A6240;
+    padding: 10px;
+}
+
+/*formatting for side bar*/
+.sidebar{
+    text-align: right;
+    float: right;
+}
+
+.aboutlist{
+    list-style-type: none;
+}
+
+#teampic{
+    float: right;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: 2px solid #8A6240;
+
+}
+
+#aboutheader{
+    border: 2px solid #4C6444;
+    border-radius: 15px; /*makes the border rounded*/
+    padding: 10px; 
+    background-color: #4C6444; /*Adds background colour within the bordered section*/
+    overflow: hidden; /*Make sure the image and text stays within the border*/
+}
+
+#abouttable{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+
+table{
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+#abouttable tr:nth-child(even) {
+    background-color: #6E8266;
+
 }

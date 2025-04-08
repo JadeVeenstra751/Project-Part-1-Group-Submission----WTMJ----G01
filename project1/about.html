@@ -16,7 +16,6 @@
 </head>
 
 <body class="about">
-    <img src="images/leafbytetechlogo.png" class="complogo" alt="LeafByte Tech Logo" width="100">
     <nav class="nav">
         <p class="menu"><a href="/project1/index.html" class="CustomLink">HOME</a></p> 
         <p class="menu"><a href="/project1/jobs.html" class="CustomLink">JOBS</a> </p> 
@@ -26,34 +25,38 @@
     </nav>
     <br>
 
-    <h1>About Us</h1>
-    <p>Here at LeafByte Tech, we are a team of dedicated sofware developers who believe in harnessing the power of Techonology and its potential to improve the world we live in. Leafbyte Tech is all about embracing innovation, imagination, creativity and ingenuity. </p>
+    <section id="aboutheader">
+        <img src="images/leafbytetechlogo.png" class="complogo" alt="LeafByte Tech Logo" width="120">
+        <h1>About Us</h1>
+        <p>Here at LeafByte Tech, we are a team of dedicated sofware developers who believe in harnessing the power of Techonology and its potential to improve the world we live in. Leafbyte Tech is all about embracing innovation, imagination, creativity and ingenuity. </p>
+    </section>
 
     <!--Side bar-->
-    <aside>
+    <aside class="sidebar">
+        <img src="images/placeholderpic.png" id="teampic" alt="Team Photo" width="200">
         <!--Unordered list of student's name with nested list for class time and student ID-->
         <p><strong>Class Information</strong></p>
-        <ul>
+        <ul class="aboutlist">
             <li>Jade Veenstra
-                <ul>
+                <ul class="aboutlist">
                     <li>Student ID: 105929618</li>
                     <li>Class Time: 10.30</li>
                 </ul>
             </li>
             <li>Will Stevens
-                <ul>
+                <ul class="aboutlist">
                     <li>Student ID: 105933787</li>
                     <li>Class Time: 10.30</li>
                 </ul>
             </li>
             <li>Muhammad Taki
-                <ul>
+                <ul class="aboutlist">
                     <li>Student ID: 105653797</li>
                     <li>Class Time: 10.30</li>
                 </ul>
             </li>
             <li>Moji Alak
-                <ul>
+                <ul class="aboutlist">
                     <li>Student ID: 105616282</li>
                     <li>Class Time: 10.30</li>
                 </ul>
@@ -62,48 +65,95 @@
     </aside>
 
     <!--Section for table with team members and interests-->
-    <section>
+    <main>
         <h2>Meet the Team</h2>
-        <img src="images/placeholderpic.png" alt="Team Photo" width="100">
-        <table>
+        
+        <table id="abouttable">
             <tr>
-                <th>Jade Veenstra</th>
-                <th>Will Stevens</th>
-                <th>Muhammad Taki</th>
-                <th>Moji Alak</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Favourite Things</th>
+                <th>Fun Fact</th>
             </tr>
             <tr>
-                <td>Insert Jade Veenstra Interests, Creator of the <a href="index.html">Home</a> Page</td>
-                <td>Insert Will Stevens Interests, Creator of the <a href="apply.html">Apply</a> Page</td>
-                <td>Insert Muhammad Taki Interests, Creator of the <a href="jobs.html">Position Description</a> Page</td>
-                <td>Insert Moji Alak Interests, Creator of the <a href="about.html">About</a> Page</td>
+                <td>Jade</td>
+                <td>18</td>
+                <td>
+                    <ul>
+                        <li>Food: Ramen</li>
+                        <li>Colour: Pink </li>
+                        <li>Animal: Cats</li>
+                        <li>Season: Autumn</li>
+                    </ul>
+                </td>
+                <td>Jade's home town is a suburb with bush reserves and ponds!</td>
+            </tr>
+            <tr>
+                <td>Will</td>
+                <td>18</td>
+                <td>
+                    <ul>
+                        <li>Food:</li>
+                        <li>Colour: Green</li>
+                        <li>Animal: Penguins</li>
+                        <li>Season: Winter</li>
+                    </ul>
+                </td>
+                <td>Wills past time activities are tennis and video games!</td>
+            </tr>
+            <tr>
+                <td>Taki</td>
+                <td>18</td>
+                <td>
+                    <ul>
+                        <li>Food:</li>
+                        <li>Colour: Red and Balck</li>
+                        <li>Animal: Lion</li>
+                        <li>Season:</li>
+                    </ul>
+                </td>
+                <td>Taki's plays cricket in his free time!</td>
+            </tr>
+            </tr>
+            <tr>
+                <td>Moji</td>
+                <td>21</td>
+                <td>
+                    <ul>
+                        <li>Food: Korean BBQ</li>
+                        <li>Colour: Lilac</li>
+                        <li>Animal: Sea Otters</li>
+                        <li>Season: Winter</li>
+                    </ul>
+                </td>
+                <td>Moji's small home town produces one of the most iconic rums in Australia, Bundaberg Rum!</td>
             </tr>
         </table>
-    </section>
-
-    <!--Main section wiht Definition List for member name and their contribution-->
-    <main>
-        <h3>Contributions</h3>
-        <dl>
-            <dt>Jade Veenstra</dt>
-            <dd>Creator of the <a href="index.html">Home</a> Page</dd>
-
-            <dt>Will Stevens</dt>
-            <dd>Creator of the <a href="apply.html">Apply</a> Page</dd>
-
-            <dt>Muhammad Taki</dt>
-            <dd>Creator of the <a href="jobs.html">Position Description</a> Page
-
-            <dt>Moji Alak</dt>
-            <dd>Creator of the <a href="about.html">About</a> Page</dd>
-        </dl>
-        <p> If you are ready to make your mark within the tech world, <a href="apply.html">join us today</a> in our journey to transform the industry, one byte at a time.</p>
     </main>
     <hr>
 
+    <!--Main section with Definition List for member name and their contribution-->
+    <section>
+        <h3>Contributions</h3>
+        <dl>
+            <dt><strong>Jade Veenstra</strong></dt>
+            <dd>Creator of the <a href="index.html" class="aboutlink">Home</a> Page</dd>
+
+            <dt><strong>Will Stevens</strong></dt>
+            <dd>Creator of the <a href="apply.html" class="aboutlink">Apply</a> Page</dd>
+
+            <dt><strong>Muhammad Taki</strong></dt>
+            <dd>Creator of the <a href="jobs.html" class="aboutlink">Position Description</a> Page
+
+            <dt><strong>Moji Alak</strong></dt>
+            <dd>Creator of the <a href="about.html" class="aboutlink">About</a> Page</dd>
+        </dl>
+        <p> If you are ready to make your mark within the tech world, <a href="apply.html" class="aboutlink">join us today</a> in our journey to transform the industry, one byte at a time.</p>
+    </section>
+
     <!--Footer Section with link to JIRA project-->
     <footer class="aboutfooter">
-        <p><a href="https://wtmjg01.atlassian.net/jira/your-work" target="_blank">&copy; 2025 LeafByte Tech. All rights reserved. &bull; Jira Project</a></p>
+        <p><em><a href="https://wtmjg01.atlassian.net/jira/your-work" class="aboutlink" target="_blank">&copy; 2025 LeafByte Tech. All rights reserved.</em> &bull; Jira Project</a></p>
     </footer>
 </body>
 </html>
