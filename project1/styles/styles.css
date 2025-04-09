@@ -133,15 +133,17 @@ fieldset{
 }
 
 /*select and input*/
-select, input{
+select, input, textarea{
     color:#4d2d18;/*changes colour of text to brown*/
     background-color:#8A6240;/*changes background colour to light brown*/
     border-radius:20px;/*changes border radius so that the border has rounded corners*/
     padding:6px;/*creates a bigger gap between the border and the text*/
-    font-size:14px;/*changes font size to 14px*/
-    
+    font-size:14px;/*changes font size to 14px*/   
 }
 
+textarea::placeholder{
+    color:#4d2d18;
+}
 /*When hovered over select*/
 select:hover{
     background-color: #69944c;/*changes background to light green*/
@@ -152,6 +154,11 @@ select:hover{
 input:hover{
     background-color: #69944c;/*changes background to light green*/
     border: 2px solid #2d441e;/*changes border to dark green*/  
+}
+
+textarea:hover{
+    background-color: #69944c;/*changes background to light green*/
+    border: 2px solid #2d441e;/*changes border to dark green*/   
 }
 
 /*Moji Alak*/
@@ -313,3 +320,5 @@ footer{
     padding: 5px;
     width: 25%;
 }
+
+   
