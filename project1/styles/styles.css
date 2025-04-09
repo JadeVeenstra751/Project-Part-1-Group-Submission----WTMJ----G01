@@ -1,5 +1,9 @@
 /* JADE VEENSTRA*/
 
+* {
+  box-sizing: border-box;
+}
+
 /* menu is displayed in one line*/
 .menu{
     display: inline-block;
@@ -8,27 +12,30 @@
 /*nav <a>*/
 nav a{
     text-decoration: none; /*no underline for hyperlinks*/
-    background-color: #ab8462; /*the background for nav a is light brown*/
-    padding: 12px 35px; /*adds padding, space around text*/
-    border-radius: 20px; /*makes the button round*/
-    margin:0px; /*removes the existing margin*/
+    background-color: #ab8462;
+    padding: 0.75rem 2.5rem; /*adds padding*/
+    border-radius: 2rem; /*makes the border round*/
+    font-weight: bold; /*makes font bold*/
+    text-decoration: none; /*no underline for hyperlinks*/
+    transition: background-color 0.3s ease; /*transitions from brown to green*/
 }
 
 /*nav <a> hover*/
 nav a:hover {
     background-color: #69944c;/*changes background to light green*/
     border: 2px solid #2d441e;/*changes border to dark green*/
-    padding: 12px 35px; /*adds padding to the hover*/
+    padding: 0.68rem 2.35rem; /*adds padding to the hover*/
     color: #2d441e;
 }
 
 /* the navigation/menu bar*/
 .nav{
     display: flex; 
+    flex-wrap: wrap; /*prevents the menu from overflowing when condensed*/
     font-weight: bold; /*makes the text bold*/
     background-color: #8A6240; /*brown backgorund colour for the nav bar*/
     justify-content: space-evenly; /*spaces the items evenly*/
-    font-size: 20px; /*font size is 20px*/
+    font-size: 1.25em; /*font size is 20px*/
     align-items: center; /*vertically aligns items to centre*/
     width: 85%; /* width of the nav bar is 85%*/
     padding: 6px 0; /*adds padding*/
@@ -39,7 +46,7 @@ nav a:hover {
 /*logo image*/
 #imagelogo{
     float:left; /*image is floated to the left*/
-    margin: auto;
+    margin: auto; /*centres it horizontally*/
 }
 /*background*/
 .home{ 
@@ -49,9 +56,15 @@ nav a:hover {
     background-size: cover; /*covers the whole page*/
 }
 
+/*heading 1*/
+h1 {
+    float: right
+}
+
 /*body*/
 body{
     font-family:Calibri; /*making the website font calibri*/
+    padding-bottom: 50px;
 }
 
 /*hyperlinks and footer colours*/
@@ -80,7 +93,7 @@ body{
 }
 
 /*buttons in the company information*/
-#indexinfobuttons {
+#indexinfosearch, #indexinfoapply {
     width: 5%; /* width of the nav bar is 85%*/
     background-color: #8A6240; /*brown backgorund colour for the nav bar*/
     padding: 12px 20px; /*adds padding*/
@@ -96,7 +109,7 @@ section a{
 }
 
 /*indexinfobuttons hover*/
-#indexinfobuttons:hover {
+#indexinfosearch:hover, #indexinfoapply:hover {
     background-color: #69944c;/*changes background to light green*/
     border: 2px solid #2d441e;/*changes border to dark green*/
     padding: 10px 20px; /*adds padding to the hover*/
