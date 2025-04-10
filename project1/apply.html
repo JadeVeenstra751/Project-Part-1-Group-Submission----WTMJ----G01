@@ -36,13 +36,8 @@
             <legend>Job Reference Number</legend>
             <select name="jobnum" id="job_num" required="required">
                 <option value="">Please Select</option>
-                <option value="G01">G01- Software Developer</option>
-                <option value="G02">G02 - Network Administrator</option>
-                <option value="G03">G03 - Data Analyst</option>
-                <option value="G04">G04 - Cybersecurity Specialist</option>
-                <option value="G05">G05 - IT Support Technician</option>
-                <option value="G06">G06 - Cloud Engineer</option>
-                <option value="G07">G07 - AI/ML Engineer </option>
+                <option value="SF71T">SF71T- Software Developer</option>
+                <option value="AI02M">AI02M - AI/ML Engineer</option>
             </select>
         </fieldset>
         <!--Adds a fieldset that has a drop down list, containing job reference numbers. 
@@ -78,12 +73,12 @@
             <legend>Residential Address</legend>
             <p>
                 <label for="StreetAddress">Street Address</label>
-                <input type="text" size="20" id="StreetAddress" maxlength="40" required>
+                <input type="text" size="20" name="Street Address" id="StreetAddress" maxlength="40" required>
             </p>
             <!--Adds a textarea for street address-->
             <p>
                 <label for="suburb">Suburb/Town</label>
-                <input type="text" size="15" id="suburb" maxlength="40" required>
+                <input type="text" size="15" id="suburb" name="suburb" pattern="[A-Za-z]{1,40}" maxlength="40" required>
             </p>
             <!--Makes a textarea for suburb/town-->
             <p>
@@ -103,7 +98,7 @@
             <!--creates a dropdown list for State, using please select as a placeholder-->
             <p>
                 <label for="post">Postcode</label>
-                <input type="text" size="5" id="post" maxlength="4" pattern="[0-9]{4}" required>
+                <input type="text" size="5" id="post" name="postcode" maxlength="4" pattern="[0-9]{4}" required>
             </p>
             <!--Creates a text area for postcode, checking that it only uses numbers and is 4 digits long-->
         </fieldset>
@@ -112,18 +107,41 @@
             <legend>Contact Information</legend>
             <p>
                 <label for="email">Email Address</label>
-                <input type="email" size="35" id="email" required>
+                <input type="email" name="email" size="35" id="email" required>
             </p>
             <!--Makes a text area for address that automatically validates and checks it only uses letters-->
             <p>
                 <label for="Phone">Phone Number</label>
-                <input type="text" size="15" id="Phone" pattern="[0-9]{8-12}" required>
+                <input type="text" size="15" id="Phone" name="phone" pattern="[0-9]{8-12}" required>
             </p>
             <!--Makes a textarea for phone number that checks that it only uses numbers, and is in between 8 and 12 digits.-->
         </fieldset>
         <input type= "submit" value="Apply">
         <input type= "reset" value="Reset Form">
         <!--Creates submit and reset buttons, submitting will print out inputted info, reset will reset-->
+        <fieldset>
+            <legend>Personal Skills relevant to Job</legend>
+            <p>
+            <label for="html">HTML</label> 
+                <input type="checkbox" id="html" name="skill" value="html" checked="checked">
+              <label for="CSS">CSS</label>
+                <input type="checkbox" id="CSS" name="skill" value="CSS"/>
+            <label for="JavaScript">JavaScript</label>
+                <input type="checkbox" id="JavaScript" name="skill" value="JavaScript">
+            <label for = "PHP">PHP</label>
+                <input type="checkbox" id="PHP" name="skill" value="PHP">
+            <label for = "MySQL">MySQL</label>
+                <input type="checkbox" id="MySQL" name="skill" value="MySQL">
+            <label for="N/A">Not a lot of coding experience</label>
+                <input type="checkbox" id="N/A" name="skill" value="N/A">
+            </p>
+            <p>
+                <label for="OtherSkills">Other Skills</label>
+            </p>
+            <p>
+                <textarea id="OtherSkills" name="OtherSkills" rows="5" cols="40" placeholder="Please enter any other relevant skills here."></textarea>
+            </p>
+        </fieldset>
      </form>
      <br>
      <br>
