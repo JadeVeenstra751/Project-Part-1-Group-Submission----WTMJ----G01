@@ -28,9 +28,9 @@ nav a{
 /*nav <a> hover*/
 nav a:hover {
     background-color: #69944c;/*changes background to light green*/
-    border: 2px solid #2d441e;/*changes border to dark green*/
-    padding: 0.68rem 2.35rem; /*adds padding to the hover*/
-    color: #2d441e;
+    border: 3px solid #2d441e;/*changes border to dark green*/
+    padding: 0.65rem 2.32rem; /*adds padding to the hover*/
+    color: #2d441e; /*changes the text colour to dark green*/
 }
 
 /* the navigation/menu bar*/
