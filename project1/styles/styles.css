@@ -27,8 +27,8 @@ nav a{
 
 /*nav <a> hover*/
 nav a:hover {
-    background-color: #69944c; /*changes background to light green*/
-    border: 3px solid #2d441e; /*changes border to dark green*/
+    background-color: #69944c;/*changes background to light green*/
+    border: 3px solid #2d441e;/*changes border to dark green*/
     padding: 0.65rem 2.32rem; /*adds padding to the hover*/
     color: #2d441e; /*changes the text colour to dark green*/
 }
@@ -60,15 +60,20 @@ nav a:hover {
     background-position: center; /*centred in the middle of the screen*/
     background-repeat: no-repeat; /*image is not repeated to prevent tiles*/
     background-size: cover; /*covers the whole page*/
-    padding-bottom: 530px; /*adds padding to the bottom so footer doesnt cover text*/
+    padding-bottom: 550px; /*adds padding to the bottom so footer doesnt cover text*/
 }
 
 /*heading 1 on index*/
 #leafbytetitle {
     text-align: center; /*putting it in the centre of page*/
-    margin-left:40%; /*adjusting it so it goes to the right a bit*/
+    margin-left: 40%; /*adjusting it so it goes to the right a bit*/
     color: #351e0f; /*text is set to brown*/
     font-size: 3em; /*font size*/
+}
+
+/*heading 2 on index*/
+#companydescription {
+    font-size: 1em; /*font size*/
 }
 
 /*hyperlinks and footer colours*/
@@ -136,7 +141,7 @@ section a{
 
 /*hover for section and footer*/
 section a:hover, footer a:hover{
-    color: #2d441e; /*changes text to dark green*/
+    color: #2d441e;/*changes text to dark green*/
 }
 
 /* WILL STEVENS*/
