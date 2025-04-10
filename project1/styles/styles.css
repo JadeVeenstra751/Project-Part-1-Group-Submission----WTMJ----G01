@@ -17,7 +17,7 @@ body{
 /*nav <a>*/
 nav a{
     text-decoration: none; /*no underline for hyperlinks*/
-    background-color: #ab8462;
+    background-color: #ab8462; /*changes the background colour to brown*/
     padding: 0.75rem 2.5rem; /*adds padding*/
     border-radius: 2rem; /*makes the border round*/
     font-weight: bold; /*makes font bold*/
@@ -27,15 +27,15 @@ nav a{
 
 /*nav <a> hover*/
 nav a:hover {
-    background-color: #69944c;/*changes background to light green*/
-    border: 3px solid #2d441e;/*changes border to dark green*/
+    background-color: #69944c; /*changes background to light green*/
+    border: 3px solid #2d441e; /*changes border to dark green*/
     padding: 0.65rem 2.32rem; /*adds padding to the hover*/
     color: #2d441e; /*changes the text colour to dark green*/
 }
 
 /* the navigation/menu bar*/
 .nav{
-    display: flex; 
+    display: flex; /*makes it flexible*/
     flex-wrap: wrap; /*prevents the menu from overflowing when condensed*/
     font-weight: bold; /*makes the text bold*/
     background-color: #8A6240; /*brown backgorund colour for the nav bar*/
@@ -74,7 +74,7 @@ nav a:hover {
 /*hyperlinks and footer colours*/
 .CustomLink, footer, footer a{
     color:#351e0f; /*text is set to brown*/
-    text-decoration: none; /*removes the underline from the hyperlink*/
+    text-decoration: none; /*removes the underline from the hyperlinks*/
 }
 
 /*footer for the index page*/
@@ -90,7 +90,7 @@ nav a:hover {
 #indexcompanyinfo{
     background-color: #ab8462; /*the background company information is light brown*/
     padding: 12px 35px; /*adds padding, space around text*/
-    border-radius: 20px; /*makes the button round*/
+    border-radius: 20px; /*makes the section round*/
     margin-left: auto; /*pushes it to the right side*/
     margin-right: 5%;  /*space from the right*/
     text-align: center; /*centres the text*/
@@ -107,7 +107,7 @@ nav a:hover {
     border: none; /*removes border*/
     border-top: 2px solid #8A6240; /*gives new border and changes colour*/
     width: 80%; /*length of the divider*/
-    margin: 20px auto; 
+    margin: 20px auto; /*adds space above and below*/
 }
 
 /*buttons in the company information*/
@@ -123,8 +123,8 @@ nav a:hover {
 
 /*indexinfobuttons hover*/
 #indexinfosearch:hover, #indexinfoapply:hover {
-    background-color: #69944c;/*changes background to light green*/
-    border: 2px solid #2d441e;/*changes border to dark green*/
+    background-color: #69944c; /*changes background to light green*/
+    border: 2px solid #2d441e; /*changes border to dark green*/
     padding: 10px 20px; /*adds padding to the hover*/
 }
 
@@ -136,7 +136,7 @@ section a{
 
 /*hover for section and footer*/
 section a:hover, footer a:hover{
-    color: #2d441e;/*changes text to dark green*/
+    color: #2d441e; /*changes text to dark green*/
 }
 
 /* WILL STEVENS*/
