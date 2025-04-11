@@ -203,13 +203,14 @@ textarea:hover{
 /*formatting for body*/
 .about{
     background-color: #CABA9C;/*adds back ground colour*/
-    padding-bottom: 50px; /*ensures that sections will not overlap with fixed footer*/
+    padding-bottom: 4em; /*ensures that sections will not overlap with fixed footer*/
+    color: #351e0f;
 }
 
 #aboutheader{
     border: 2px solid #8A6240; /*creates a border for the section*/
     border-radius: 15px; /*makes the border rounded*/
-    padding: 10px; 
+    padding: 1.5em; 
     background-color: #ab8462; /*Adds background colour within the bordered section*/
     overflow: hidden; /*Make sure the image and text stays within the border*/
 }
@@ -217,7 +218,12 @@ textarea:hover{
 /*formatting for comapany logo on about page*/
 #complogo{
     float: left; /*ensure image is on the left*/
-    padding: 5px; /*adds padding to image*/
+    padding: 1em; /*adds padding to image*/
+}
+
+/*formatting for About page company discription section*/
+#aboutdescript{
+    font-size: 1.5em; /*changes text size*/
 }
 
 /*Hyperlinks formatting for about page*/
@@ -235,14 +241,14 @@ textarea:hover{
 /*styling for ul on about page*/
 .aboutlist{
     list-style-type: none; /*removes the bullet points from lists*/
-    margin-bottom: 5px; /*spacing between items for readability*/
+    margin-bottom: 1em; /*spacing between items for readability*/
 }
 
 /*team photo styling*/
 #teampic{
     float: right; /*image to be positioned on the right while allowing other contents to flow to the left*/
-    margin-left: 10px; /*adds margin to the left of image*/
-    margin-top: 10px; /*adds margin to the top of image*/
+    margin-left: 2em; /*adds margin to the left of image*/
+    margin-top: 2em; /*adds margin to the top of image*/
     border: 2px solid #8A6240; /*adds boarder to image*/
     border-radius: 15px; /*makes the border rounded*/
 }
@@ -261,17 +267,18 @@ textarea:hover{
     border-collapse: collapse;
     padding: 10px; /*adds padding to table*/
     background-color: #8A6240;
-    border-radius: 15px;
+    border-radius: 15px; /*rounds the border of the table*/
 }
 
+/*formatting for table header row*/
 .headerrow{
-    padding: 1em;
+    padding: 1em; /*adds padding around text for better readability*/
 }
 
 /*adds hover effect to table*/
 #abouttable tr:hover{
-    background-color: #69944c;
-    cursor: pointer;
+    background-color: #69944c; /*changes color when curser in hovered over rows*/
+    cursor: pointer; /*changes curser to pointer when hovered over rows*/
 }
 
 /*transition effect or table*/
@@ -279,15 +286,17 @@ textarea:hover{
     transition: background-color 0.5s ease; /*delays the colour transition for a smoother effect*/
 }
 
+/*formatting for contribution section*/
 #contributions {
-    margin: auto;
-    border:2px solid #2d441e;
-    border-radius: 15px;
-    padding: 1em;
+    margin: auto; /*centers the section within the page*/
+    border:2px solid #2d441e; /*adds border around section*/
+    border-radius: 15px; /*rounds the corner of the border*/
+    padding: 1em; /*adds padding so text does not sit against the border*/
 }
 
+/*text formatting for Student contributions*/
 #studentstitle {
-    text-align: left;
+    text-align: left; /*aligns text to the left*/
 }
 
 .students{
@@ -306,7 +315,7 @@ textarea:hover{
 #finalabout{
     text-align: center; /*makes text aling to center*/
     color: #2d441e; /*changes text colour to green*/
-    clear: both;
+    clear: both; /*ensure nothing can be place in line of the left or right*/
     padding: 2em;
 }
 
