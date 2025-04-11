@@ -54,6 +54,7 @@ nav a:hover {
     height: auto; /*centres it*/
     float: left; /*moves to the left*/
 }
+
 /*body for index page*/
 .home{ 
     background-image: url('../images/khakibackground.png'); /*image is from https://www.freepik.com/photos/khaki-background*/
@@ -82,13 +83,18 @@ nav a:hover {
     text-decoration: none; /*removes the underline from the hyperlinks*/
 }
 
-/*footer for the index page*/
-.indexfooter {
-    background-color: #8A6240; /*turns background brown*/
-    text-align: center; /*centres the text*/
-    margin-top: 10px; /*spacing from content above*/
-    clear: both; /*pushing the footer to the bottom*/
+/*formatting for about page Footer*/
+footer{
+    position: fixed; /*ensures footer is fixed*/
+    bottom: 0; /*ensure that footer is fixed to the BOTTOM of the page*/
+    left: 0; /*ensures that there is 0px gap from the left of page*/
+    width: 100%; /*ensures that footer spans across the whole width of page*/
+    text-align: center; /*align text content to center*/
+    background-color: #8A6240; /*adds background colour to section*/
+    border-top: solid #4d2d18; /*adds border only to the top of section*/
     padding: 10px 0; /*adds padding to the footer*/
+    font-size: 0.85em; /*changes font size*/
+
 }
 
 /*company information section*/
@@ -226,12 +232,6 @@ textarea:hover{
     font-size: 1.5em; /*changes text size*/
 }
 
-/*Hyperlinks formatting for about page*/
-.aboutlink{
-    text-decoration: none; /*removes underline from hyperlinks*/
-    color: #4d2d18 /*changes colour of hyperlink to brown*/
-}
-
 /*formatting for side bar*/
 .sidebar{
     text-align: right; /*ensure section is on the right*/
@@ -319,31 +319,12 @@ textarea:hover{
     padding: 2em;
 }
 
-/*formatting for about page Footer*/
-footer{
-    position: fixed; /*ensures footer is fixed*/
-    bottom: 0; /*ensure that footer is fixed to the BOTTOM of the page*/
-    left: 0; /*ensures that there is 0px gap from the left of page*/
-    width: 100%; /*ensures that footer spans across the whole width of page*/
-    text-align: center; /*align text content to center*/
-    background-color: #8A6240; /*adds background colour to section*/
-    border-top: solid #4d2d18; /*adds border only to the top of section*/
-}
-
 /* Muhammad Taki*/
 
 
 /* To set a fixed width for the logo image */
 #logo_jobs{
     width: 200px;
-}
-/* footer setting*/
-#footer_jobs{
-    padding: 5px;
-    border: solid #4d2d18;
-    text-align: center;
-    background-color: #8A6240;
-    width: 100%;
 }
 
 /* Job Title setting*/
