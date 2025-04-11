@@ -282,34 +282,21 @@ textarea:hover{
 }
 
 /*transition effect or table*/
-#abouttable tr{
-    transition: background-color 0.5s ease; /*delays the colour transition for a smoother effect*/
-}
+#abouttable tr{transition: background-color 0.5s ease;} /*delays the colour transition for a smoother effect*/
 
 /*formatting for contribution section*/
-#contributions {
+#contributions{
     margin: auto; /*centers the section within the page*/
     border:2px solid #2d441e; /*adds border around section*/
     border-radius: 15px; /*rounds the corner of the border*/
     padding: 1em; /*adds padding so text does not sit against the border*/
 }
 
-/*text formatting for Student contributions*/
-#studentstitle {
-    text-align: left; /*aligns text to the left*/
-}
+/*formatting for description list*/
+.students{padding: 2em;} /*adds padding around text in class .students*/
 
-.students{
-    float: left;
-}
-
-#teacherstitle {
-    text-align: right;
-}
-
-.teachers {
-    float: right;
-}
+/*formatting for description list*/
+.students:first-child, .students:nth-child(2), .students:nth-child(3), .students:nth-child(4) {float: left;} /*floats descrtiption list to left*/
 
 /*Closing line styling*/
 #finalabout{
@@ -331,7 +318,6 @@ footer{
 }
 
 /* Muhammad Taki*/
-
 
 /* To set a fixed width for the logo image */
 #logo_jobs{
