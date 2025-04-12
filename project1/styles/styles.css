@@ -332,24 +332,31 @@ textarea:hover{
 /* Job Title setting*/
 
 .h1_jobs{
-    border: solid #4d2d18;
-    width: 230px;
-    border-radius: 10px;
-    transition-duration: 0.1s;
+    border: solid #4d2d18; /*To create a border around the content*/
+    width: 230px; /*Witdh size of content */
+    border-radius: 10px; /*making corners of the shape curved*/
+    transition-duration: 0.1s; /*Applied to create a delay in transition*/
 }
 
+/*Changes to job titles when mouse hovers above it*/
 .h1_jobs:hover{
-    background-color: #4d2d18;
+    background-color: #4d2d18; /*Creates background colour*/
     color: #CABA9C;
 }
 
 /* aside setting*/
 
 #aside_jobs{
-    float: right;
-    border: solid  #4d2d18;
-    border-radius: 10px;
-    font-size: 14px;
-    padding: 5px;
-    width: 25%;
+    float: right; /*Setting it to be located on the right side of page*/
+    border: solid  #4d2d18; /*To create a border around the content*/
+    border-radius: 10px;  /*making corners of the shape curved*/
+    font-size: 14px; /*Size of text*/
+    padding: 5px; /*gap around the content*/
+    width: 25%; /*size of content on the page*/
 }
+
+
+#h1_jobs {
+    font: normal 34px 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*Setting font family, size, and variant.*/
+    color: #4d2d18; /*changing color of content*/
+  }
