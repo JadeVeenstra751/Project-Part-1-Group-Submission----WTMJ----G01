@@ -69,7 +69,7 @@ nav a:hover {
 
 /*body for index page*/
 .home{ 
-    background-image: url('../images/khakibackground.png'); /*image is from https://www.freepik.com/photos/khaki-background*/
+    background-image: url('images/khakibackground.png'); /*image is from https://www.freepik.com/photos/khaki-background*/
     background-position: center; /*centred in the middle of the screen*/
     background-repeat: no-repeat; /*image is not repeated to prevent tiles*/
     background-size: cover; /*covers the whole page*/
