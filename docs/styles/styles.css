@@ -1,5 +1,15 @@
 /* JADE VEENSTRA*/
-/*css for the index/home page, along with universal menu and footer code*/
+/*css for index.html, along with universal menu and footer code*/
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+    .header {
+        font-size: 24px;
+    }
+}   
 
 * {
   box-sizing: border-box;
@@ -154,6 +164,7 @@ section a:hover, footer a:hover{
 }
 
 /* WILL STEVENS*/
+/*css for apply.html*/
 
 /*The whole page*/
 .page{
@@ -208,6 +219,7 @@ textarea:hover{
 }
 
 /*Moji Alak*/
+/*css for about.html*/
 
 /*formatting for body*/
 .about{
@@ -309,7 +321,8 @@ textarea:hover{
     padding: 2em;
 }
 
-/* Muhammad Taki*/
+/* Muhammad Taki */
+/*css for jobs.html*/
 
 /* To set a fixed width for the logo image */
 #logo_jobs{
@@ -340,13 +353,3 @@ textarea:hover{
     padding: 5px;
     width: 25%;
 }
-
-@media only screen and (max-width: 768px) {
-    .container {
-        width: 100%;
-        padding: 10px;
-    }
-    .header {
-        font-size: 24px;
-    }
-}   
