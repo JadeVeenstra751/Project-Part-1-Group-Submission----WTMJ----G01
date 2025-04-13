@@ -164,7 +164,18 @@ section a:hover, footer a:hover{
 }
 
 /* WILL STEVENS*/
-/*css for apply.html*/
+/*css for apply.html along with phone resize and global fieldset css*/
+
+/*Allows the page to be resized, optimised for phones or tablets*/
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+    .header {
+        font-size: 24px;
+    }
+}  
 
 /*The whole page*/
 .page{
