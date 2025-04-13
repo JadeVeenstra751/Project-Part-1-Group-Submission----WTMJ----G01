@@ -166,6 +166,8 @@ section a:hover, footer a:hover{
 form{
     display:flex;/*Creates a flex display*/
     flex-direction: column;/*Forces the flex to go down the page*/
+    flex-flow:wrap;/*Able to condense*/
+    min-width:350px;/*sets min width to 350 so it condenses fine*/
     margin:auto;/*Sets form to middle of available screen*/
     margin-left:28%;/*This counteracts the aside note, so that the form is in the centre*/
     width:43%;/*sets width to 813px*/
@@ -212,7 +214,7 @@ fieldset{
     color:#351e0f;/*changes color of the text to brown*/
     border-color:#351e0f;/*changes colour of its border to brown*/
     border-radius:20px;/*changes border radius to round it off more*/
-    width:750px;/*changes width of fieldset to 750px*/
+    width:800px;/*changes width of fieldset to 750px*/
 }
 
 /*select and input*/
