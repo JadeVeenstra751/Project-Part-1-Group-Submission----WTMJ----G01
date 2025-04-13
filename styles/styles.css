@@ -20,11 +20,6 @@
     display: inline-block;
 }
 
-/*body*/
-body{
-    font-family:Calibri; /*making the website font calibri*/
-}
-
 /*nav <a>*/
 nav a{
     text-decoration: none; /*no underline for hyperlinks*/
@@ -176,6 +171,11 @@ section a:hover, footer a:hover{
         font-size: 24px;
     }
 }  
+
+/*body*/
+body{
+    font-family:Calibri; /*making the website font calibri*/
+}
 
 /*The whole page*/
 .page{
