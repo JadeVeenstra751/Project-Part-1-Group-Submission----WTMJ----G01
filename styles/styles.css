@@ -164,24 +164,40 @@ section a:hover, footer a:hover{
 
 /*form*/
 form{
-    width:813px;/*sets width to 813px*/
+    display:flex;/*Creates a flex display*/
+    flex-direction: column;/*Forces the flex to go down the page*/
+    margin:auto;/*Sets form to middle of available screen*/
+    margin-left:28%;/*This counteracts the aside note, so that the form is in the centre*/
+    width:43%;/*sets width to 813px*/
     background-color:#ab8462;/*sets background colour*/
     padding:20px;/*Creates space between contents and border*/
     border-radius:25px;/*Rounds edges of border off*/
     border:2px solid #8A6240;/*sets border colour*/
 }
+
 /*body*/
 body{
     font-family:Calibri; /*making the website font calibri*/
 }
-
+/*Apply and Reset buttons*/
+.submission{
+    width:200px;/*changes width of buttons*/
+}
 /*The whole page*/
 .page{
     background-color:#CABA9C;/*changes background colour to a kahki*/
 }
 
+/*Company logo*/
+.logo{
+  display: block;/*creates a moveable display block*/
+  margin: 0 auto;/*Sets image to the centre*/
+  padding-right: 20px;/*Scales Image down*/
+}
+
 /*Title and aside note at the top*/
-.title, .note{
+.title,.note{
+    text-align: center;/*sets text to the middle*/
     color:#351e0f;/*changes colour to brown*/
 }
 
@@ -198,6 +214,7 @@ fieldset{
     border-radius:20px;/*changes border radius to round it off more*/
     width:750px;/*changes width of fieldset to 750px*/
 }
+
 /*select and input*/
 select, input, textarea{
     border:solid 2px #351e0f;
