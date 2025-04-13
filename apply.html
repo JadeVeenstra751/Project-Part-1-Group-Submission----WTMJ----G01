@@ -36,8 +36,8 @@
         <!--Adds a fieldset that has a drop down list, containing job reference numbers. 
         Uses "please select" as a placeholder-->
         <fieldset>
-            <legend>Job Reference Number</legend>
-            <select name="jobnum" id="job_num" required="required">
+            <legend><strong>Job Reference Number</strong></legend>
+            <select name="jobnum" id="job_num" required="required" class="job_num">
                 <option disabled selected value>Please Select</option>
                 <option value="SF71T">SF71T- Software Developer</option>
                 <option value="AI02M">AI02M - AI/ML Engineer</option>
@@ -45,7 +45,7 @@
         </fieldset>
         <!--Creates a fieldset for name and date of birth-->
         <fieldset>
-            <legend>Name and Birth</legend>
+            <legend><strong>Name and Birth</strong></legend>
             <!--Adds two text areas that makes sure only letters can be inputted for name-->
             <p>
                 <label for = "GivenName">Given Name</label>
@@ -72,7 +72,7 @@
         </fieldset>
         <!--Makes a fieldset for Residential Address-->
         <fieldset>
-            <legend>Residential Address</legend>
+            <legend><strong>Residential Address</strong></legend>
             <!--Adds a textarea for street address-->
             <p>
                 <label for="StreetAddress">Street Address</label>
@@ -81,7 +81,7 @@
             <!--Makes a textarea for suburb/town-->
             <p>
                 <label for="suburb">Suburb/Town</label>
-                <input type="text" size="15" id="suburb" name="suburb" pattern="[A-Za-z]{1,40}" maxlength="40" required>
+                <input type="text" size="15" id="suburb" name="suburb" pattern="[A-Za-z]{1,40}" title="Can only be letter A through Z, can't be more than 40 characters" maxlength="40" required>
             </p>
             <!--creates a dropdown list for State, using please select as a placeholder-->
             <p>
@@ -101,26 +101,26 @@
             <!--Creates a text area for postcode, checking that it only uses numbers and is 4 digits long-->
             <p>
                 <label for="post">Postcode</label>
-                <input type="text" size="5" id="post" name="postcode" maxlength="4" pattern="[0-9]{4}" required>
+                <input type="text" size="5" id="post" name="postcode" maxlength="4" pattern="[0-9]{4}" title="Can only be numbers 0 through 9, has to be 4 characters long" required>
             </p>
         </fieldset>
         <!--Creates a fieldset that obtains contact information (Email and Phone)-->
         <fieldset>
-            <legend>Contact Information</legend>
+            <legend><strong>Contact Information</strong></legend>
             <!--Makes a text area for address that automatically validates and checks it only uses letters-->
             <p>
                 <label for="email">Email Address</label>
-                <input type="email" name="email" size="35" id="email" required>
+                <input type="email" name="email" size="35" title="Has to be in the valid email form i.e john.doe@gmail.com" id="email" required>
             </p>
             <!--Makes a textarea for phone number that checks that it only uses numbers, and is in between 8 and 12 digits.-->
             <p>
                 <label for="Phone">Phone Number</label>
-                <input type="text" size="15" id="Phone" name="phone" pattern="[0-9]{8-12}" required>
+                <input type="text" size="15" id="Phone" name="phone" pattern="[0-9]{8-12}" title="Can only be numbers 0 through 9, minimum of 8 characters, maximum of 12" required>
             </p>
         </fieldset>
         <!--Creates a fieldset that obtains personal skills relevant to Job-->
         <fieldset>
-            <legend>Personal Skills relevant to Job</legend>
+            <legend><strong>Personal Skills relevant to Job</strong></legend>
             <!--Makes a series of checkbox inputs, where html is checked already-->
             <p>
             <label for="html">HTML</label> 

@@ -172,6 +172,14 @@ section a:hover, footer a:hover{
     }
 }  
 
+/*form*/
+form{
+    width:813px;/*sets width to 813px*/
+    background-color:#ab8462;/*sets background colour*/
+    padding:20px;/*Creates space between contents and border*/
+    border-radius:25px;/*Rounds edges of border off*/
+    border:2px solid #8A6240;/*sets border colour*/
+}
 /*body*/
 body{
     font-family:Calibri; /*making the website font calibri*/
@@ -184,33 +192,34 @@ body{
 
 /*Title and aside note at the top*/
 .title, .note{
-    color:#4d2d18;/*changes colour to brown*/
+    color:#351e0f;/*changes colour to brown*/
 }
 
 /*Aside note*/
 .AsideNote{
     float:right;/*Sets the note fieldset to the right*/
+    background-color:#ab8462;/*sets background colour*/
     width:400px;/*decreases the width from 750px to 400px, only for this fieldset*/
 }
 /*Fieldset*/
 fieldset{
-    color:#4d2d18;/*changes color of the text to brown*/
-    border-color:#4d2d18;/*changes colour of its border to brown*/
+    color:#351e0f;/*changes color of the text to brown*/
+    border-color:#351e0f;/*changes colour of its border to brown*/
     border-radius:20px;/*changes border radius to round it off more*/
     width:750px;/*changes width of fieldset to 750px*/
 }
-
 /*select and input*/
 select, input, textarea{
-    color:#4d2d18;/*changes colour of text to brown*/
+    border:solid 2px #351e0f;
+    color:#351e0f;/*changes colour of text to brown*/
     background-color:#8A6240;/*changes background colour to light brown*/
     border-radius:20px;/*changes border radius so that the border has rounded corners*/
     padding:6px;/*creates a bigger gap between the border and the text*/
     font-size:14px;/*changes font size to 14px*/   
 }
-
+/*place holder in textarea*/
 textarea::placeholder{
-    color:#4d2d18;
+    color:#351e0f;/*sets colour of text*/
 }
 /*When hovered over select*/
 select:hover{
@@ -218,6 +227,10 @@ select:hover{
     border: 2px solid #2d441e;/*changes border to dark green*/ 
 }
 
+.AsideNote:hover{
+    background-color: #69944c;/*changes background to light green*/
+    border: 2px solid #2d441e;/*changes border to dark green*/ 
+}
 /*When hovered over input*/
 input:hover{
     background-color: #69944c;/*changes background to light green*/
@@ -343,7 +356,7 @@ textarea:hover{
 /* Job Title setting*/
 
 .h1_jobs{
-    border: solid #4d2d18; /*To create a border around the content*/
+    border: solid #351e0f; /*To create a border around the content*/
     width: 230px; /*Witdh size of content */
     border-radius: 10px; /*making corners of the shape curved*/
     transition-duration: 0.1s; /*Applied to create a delay in transition*/
@@ -351,7 +364,7 @@ textarea:hover{
 
 /*Changes to job titles when mouse hovers above it*/
 .h1_jobs:hover{
-    background-color: #4d2d18; /*Creates background colour*/
+    background-color: #351e0f; /*Creates background colour*/
     color: #CABA9C;
 }
 
@@ -359,7 +372,7 @@ textarea:hover{
 
 #aside_jobs{
     float: right; /*Setting it to be located on the right side of page*/
-    border: solid  #4d2d18; /*To create a border around the content*/
+    border: solid  #351e0f; /*To create a border around the content*/
     border-radius: 10px;  /*making corners of the shape curved*/
     font-size: 14px; /*Size of text*/
     padding: 5px; /*gap around the content*/
